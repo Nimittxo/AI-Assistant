@@ -10,4 +10,5 @@ tf.get_logger().setLevel('ERROR') #lOGGING DOWN THE ERROR AND WARNING MESSAGES:
 import logging
 logging.basicConfig(filename=log_file, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
-print("Chnaging the configuration of TF!")
+print("TensorFlow logging configured.")
+print(tf.__version__)
