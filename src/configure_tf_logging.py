@@ -8,7 +8,7 @@ TF_log_file = 'tensorflow_logs.txt'
 tf.get_logger().setLevel('ERROR') #lOGGING DOWN THE ERROR AND WARNING MESSAGES: 
 
 import logging
-logging.basicConfig(filename=log_file, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename=TF_log_file, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
 print("TensorFlow logging configured.")
 print(tf.__version__)
