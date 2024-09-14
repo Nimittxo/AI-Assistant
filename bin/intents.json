@@ -1,0 +1,98 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Whats up",
+        "Hey",
+        "greetings"
+      ],
+      "responses": [
+        "Hello!",
+        "Good to see you again!",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Have a Good day",
+        "bye",
+        "cao",
+        "see ya"
+      ],
+      "responses": [
+        "Sad to see you go :(",
+        "Talk to you later",
+        "Goodbye!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Personal",
+      "patterns": [
+        "what is your age?",
+        "how old are you?",
+        "your age",
+        "age"
+      ],
+      "responses": [
+        "I am an AI bot that has no age, but I was made last month"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "programming",
+      "patterns": [
+        "What is progamming?",
+        "What is coding?",
+        "Tell me about programming",
+        "Tell me about coding",
+        "What is software development?"
+      ],
+      "responses": [
+        "Programming, coding or software development, means writing computer code to automate tasks."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "how",
+      "patterns": [
+        "How are you?",
+        "How is your day?",
+        "How do you feel?",
+        "Are you good?"
+      ],
+      "responses": [
+        "I am fine, thanks for asking!",
+        "I feel great!",
+        "I am great always!, What about you?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "flask",
+      "patterns": [
+        "What is Flask?",
+        "Do you know about Flask?",
+        "Can you tell me something about Flask?",
+        "Explain Flask to me!",
+        "Are you aware of Flask?"
+      ],
+      "responses": [
+        "Flask is a lightweight web framework for Python, designed to help developers build web applications quickly and with minimal overhead. It's often described as a micro-framework because it doesn't include many built-in features like a full-fledged web framework might (such as Django). Instead, Flask provides the essentials, and developers can add extensions as needed to suit their project's requirements. Key Features of Flask: Simplicity: Flask is easy to set up and use, making it ideal for small to medium-sized projects. Flexibility: It doesn't impose a specific project structure or require any particular libraries, allowing developers to choose the tools and libraries that best fit their needs. Built-in Development Server: Flask comes with a built-in server for development purposes, making it easy to run your application locally. Jinja2 Templating: Flask uses the Jinja2 template engine, which allows developers to generate HTML dynamically using templates. RESTful Request Handling: Flask simplifies the creation of RESTful APIs by providing tools to handle HTTP requests, route URLs, and manage responses. Extensibility: Flask's modular nature allows developers to integrate various extensions for adding features like database handling, form validation, and authentication. Basic Example: Here’s a simple 'Hello, World!' application using Flask."
+      ],
+      "context_set": ""
+    }
+  ]
+}
