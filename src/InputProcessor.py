@@ -9,6 +9,8 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
+import configure_tf_logging
+
 lemmatizer = WordNetLemmatizer()
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
