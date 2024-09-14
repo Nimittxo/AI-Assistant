@@ -22,7 +22,13 @@ from tensorflow.keras.regularizers import l2
 lemmatizer = WordNetLemmatizer()
 
 # Load intents file
-intents = json.load(open('intents.json'))
+script_dir = os.path.dirname(os.path.abspath(__file__))
+intents_path = os.path.join(script_dir, 'intents.json')
+
+if not os.path.exists(intents_path):
+    raise FileNotFoundError(f"{intents_path} file not found!")
+with open(intents_path, 'r', encoding='utf-8') as file:
+    intents = json.load(file)
 
 words = []
 classes = []
@@ -95,7 +101,7 @@ adam = Adam(learning_rate=0.001)
 model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
 
 # Early Stopping
-early_stopping = EarlyStopping(monitor='val_loss', patience=10, min_delta=0.001)
+early_stopping = EarlyStopping(monitor='val_loss', patience=100, min_delta=0.001)
 
 # Train the model
 history = model.fit(train_x, train_y, epochs=500, batch_size=5, verbose=1, 
