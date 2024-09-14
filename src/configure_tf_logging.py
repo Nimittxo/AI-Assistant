@@ -5,5 +5,9 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' #Setting the @LOG_LEVEL to 3 for extrem
 
 #setting up the TensorFlow warnings to redirect and write up to a file: 
 TF_log_file = 'tensorflow_logs.txt'
+tf.get_logger().setLevel('ERROR') #lOGGING DOWN THE ERROR AND WARNING MESSAGES: 
+
+import logging
+logging.basicConfig(filename=log_file, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
 print("Chnaging the configuration of TF!")
