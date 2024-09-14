@@ -55,7 +55,7 @@ public class Main extends Application {
         StringBuilder output = new StringBuilder();
         try {
             // Build the command to run the Python script
-            String[] command = {"python", "src/test.py", input}; // Adjust path to your script
+            String[] command = {"python", "src/InputProcessor.py", input}; // Adjust path to your script
             
             // Start the process
             Process process = new ProcessBuilder(command).redirectErrorStream(true).start();
