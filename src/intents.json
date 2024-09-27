@@ -93,6 +93,23 @@
         "Flask is a lightweight web framework for Python, designed to help developers build web applications quickly and with minimal overhead. It's often described as a micro-framework because it doesn't include many built-in features like a full-fledged web framework might (such as Django). Instead, Flask provides the essentials, and developers can add extensions as needed to suit their project's requirements. Key Features of Flask: Simplicity: Flask is easy to set up and use, making it ideal for small to medium-sized projects. Flexibility: It doesn't impose a specific project structure or require any particular libraries, allowing developers to choose the tools and libraries that best fit their needs. Built-in Development Server: Flask comes with a built-in server for development purposes, making it easy to run your application locally. Jinja2 Templating: Flask uses the Jinja2 template engine, which allows developers to generate HTML dynamically using templates. RESTful Request Handling: Flask simplifies the creation of RESTful APIs by providing tools to handle HTTP requests, route URLs, and manage responses. Extensibility: Flask's modular nature allows developers to integrate various extensions for adding features like database handling, form validation, and authentication. Basic Example: Here’s a simple 'Hello, World!' application using Flask."
       ],
       "context_set": ""
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "Who is My APP faculty",
+        "Who Teaches me Java",
+        "Under whose Guidance I am learning Java",
+        "Who is my Java Teacher",
+        "Who is the Faculty for APP in AC2"
+      ],
+      "responses": [
+        "Dr. G. Priyadharshini is your APP faculty",
+        "Dr. G. Priyadharshini is your Java faculty",
+        "Dr. G. Priyadharshini teaches you java",
+        "Under Dr. G. Priyadharshini's guidance you are learning Java"
+      ],
+      "context_set": ""
     }
   ]
 }
